@@ -18,16 +18,16 @@ def capture_fullscreen():
     	ps. If you're sure that you know how to OPEN your PAINT SOFTWARE by CLI, please press 'CLI-blabla' and [Enter]
     	""").lower()
     if yn == "y":
-    	os.system("mspaint "+a)
-    	return
+        os.system("mspaint "+a)
+        return
     elif yn == "n":
-    	return
+        return
     elif yn[:3] == 'cli-':
-    	os.system(yn[4:])
-    	return
+        os.system(yn[4:])
+        return
     else:
-    	print("ERROR! NO SUCH THING!")
-    	return
+        print("ERROR!")
+        return
 
 def capture_current_windows():
     class RECT(ctypes.Structure):
@@ -49,11 +49,11 @@ def capture_current_windows():
     	ps. If you're sure that you know how to OPEN your PAINT SOFTWARE by CLI, please press 'CLI-blabla' and [Enter]
     	""").lower()
     if yn == "y":
-    	os.system("mspaint "+a)
+        os.system("mspaint "+a)
     elif yn == "n":
-    	return
+        return
     elif yn[:3] == 'CLI-':
-    	os.system(yn[4:])
+        os.system(yn[4:])
     else:
     	print("ERROR! NO SUCH THING!")
 def paste_into_clipboard_full():

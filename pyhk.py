@@ -1,4 +1,4 @@
-import ctypes, PyHook3, pythoncom  #thread
+import ctypes, PyHook3, pythoncom, thread
 
 
 class pyhk:
