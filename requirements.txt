@@ -1,0 +1,4 @@
+pillow~=10.2.0
+sheen~=0.1.2
+PyHook3
+win32gui
